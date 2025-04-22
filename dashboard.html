@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coca-Cola Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./icon/coke1.png" alt="Coca-Cola Logo" style="height:40px; vertical-align:middle; margin-right:10px;">
+      <span style="vertical-align:middle; font-weight:700; font-size:1.5rem;">Coca-Cola</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="products.html"><i class="fas fa-box"></i> Products</a></li>
+        <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+        <li><a href="sales.html"><i class="fas fa-chart-line"></i> Sales</a></li>
+        <li><a href="about.html"><i class="fas fa-circle-info"></i> About</a></li>
+      </ul>
+    </nav>
+    <div>
+      <button id="darkModeToggle" title="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Dashboard</h1>
+      <p>Refreshing the world, one drink at a time.</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <div class="product">Coca-Cola Classic</div>
+        <div class="product">Diet Coke</div>
+        <div class="product">Coke Zero Sugar</div>
+        <div class="product">Sprite</div>
+        <div class="product">Fanta</div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="./icon/ck1.jpg" alt="Coke 1">
+        <img src="./icon/ck2.jpg" alt="Coke 2">
+        <img src="./icon/ck3.jpg" alt="Coke 3">
+        <img src="./icon/ck4.jpg" alt="Coke 4">
+        <img src="./icon/sprite1.jpg" alt="Coke 4">
+      </div>
+    </section>
+
+    <section id="sales">
+      <h2>Sales Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Units Sold</th>
+            <th>Revenue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coca-Cola Classic</td>
+            <td>1500</td>
+            <td>₱254,218.50 </td>
+          </tr>
+          <tr>
+            <td>Diet Coke</td>
+            <td>800</td>
+            <td>₱135,613.20</td>
+          </tr>
+          <tr>
+            <td>Sprite</td>
+            <td>600</td>
+            <td>₱101,716.18</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="about">
+      <h2>About Coca-Cola</h2>
+      <p>
+        Coca-Cola is a carbonated soft drink with a rich history dating back to 1886. Our mission is to refresh the world and make a difference.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Coca-Cola Company. All rights reserved.</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

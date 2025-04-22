@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="icon" href="coca-cola-icon.png" />
+</head>
+<body>
+  <div class="toggle-theme">
+    <button id="toggleTheme">🌙</button>
+  </div>
+
+  <div class="container">
+    <div class="login-box">
+      <img src="./icon/coke1.png" alt="Coca-Cola Logo" class="logo" />
+      <h2>Login to Coca-Cola</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <div class="options">
+          <label><input type="checkbox" id="remember"> Remember Me</label>
+          <span class="toggle-password">👁️</span>
+        </div>
+        <button type="submit">Log In</button>
+        <p class="error-message" id="errorMsg"></p>
+        <p class="register">Don't have an account? <a href="#" id="registerLink">Sign up here</a></p>
+      </form>
+
+      <form id="registerForm" style="display:none">
+        <input type="text" id="newUsername" placeholder="Create Username" required />
+        <input type="password" id="newPassword" placeholder="Create Password" required />
+        <button type="submit">Register</button>
+        <p class="error-message" id="registerMsg"></p>
+        <p class="register">Already have an account? <a href="#" id="loginLink">Back to login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <audio id="loginSound" src="./loginmusic/success.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
